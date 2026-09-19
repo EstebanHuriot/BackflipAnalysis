@@ -1,0 +1,25 @@
+[project]
+name = "backflipanalysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "EstebanHuriot", email = "esteban.martin@bsb-education.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "opencv-python>=5.0.0.93",
+    "ultralytics>=8.4.155",
+]
+
+[project.scripts]
+backflipanalysis = "backflipanalysis:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
